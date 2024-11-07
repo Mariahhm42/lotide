@@ -22,7 +22,20 @@ const eqArrays = function(arr1, arr2) {
 // without function 
 
 const without = function(source, itemsToRemove) {
-    return source.filter(item => !itemsToRemove.includes(item));
+    const result = [];
+    for (let i = 0; i < source.length; i++) {
+      let shouldRemove = false;
+      for (let j = 0; j < itemsToRemove.length; j++) {
+        if (source[i] === itemsToRemove[j]) {
+          shouldRemove = true;
+          break;
+        }
+      }
+      if (!shouldRemove) {
+        result.push(source[i]);
+      }
+    }
+    return result;
   };
 
 assertArraysEqual(without([1, 2, 3], [1]), [2, 3]);
