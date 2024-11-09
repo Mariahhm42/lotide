@@ -1,4 +1,3 @@
-
 const assertEqual = function(actual, expected) {
     if (actual === expected) {
         console.log(`✅ Assertion Passed: ${actual}===${expected}`);
@@ -40,9 +39,10 @@ const eqObjects = function(object1, object2) {
   }
   return true;
 }
+//Test cases
 const shirtObject = { color: "red", size: "medium" };
 const anotherShirtObject = { size: "medium", color: "red" };
-assertEqual(eqObjects(shirtObject, anotherShirtObject)); // => true
+assertEqual(eqObjects(shirtObject, anotherShirtObject), true); 
 
 const longSleeveShirtObject = { size: "medium", color: "red", sleeveLength: "long" };
-assertEqual(eqObjects(shirtObject, longSleeveShirtObject)); // => false
+assertEqual(eqObjects(shirtObject, longSleeveShirtObject), false);
