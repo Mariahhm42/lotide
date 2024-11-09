@@ -32,4 +32,4 @@ const assertArraysEqual = function(arr1, arr2) {
   
 //   Test Cases
 const result1 = map(words, word => word[0]);
-assertArraysEqual(result1, ["l", "s", "t", "r", "g"]); //result => ❌ Assertion Failed: ["m","s","t","r","g"] !== ["l","s","t","r","g"]
+assertArraysEqual(result1, ["m", "s", "t", "r", "g"]); 
