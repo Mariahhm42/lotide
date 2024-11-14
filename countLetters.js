@@ -6,12 +6,13 @@ const assertEqual = function(actual, expected) {
     }
 };
 
-const countLetters = function(sentence) {
+const countLetters = function(sentence) { 
+//takes a string and returns an object with the count of each letter
     const results = {};
-    for (const char of sentence) {
-        if (char !== " ") {
+    for (const char of sentence) { //loop through each character in the sentence
+        if (char !== " ") { //ignore space in within sentence
             if (results[char]) {
-                results[char] += 1;
+                results[char] += 1; //increment count if charcter is in the result objects
             } else {
                 results[char] = 1;
             }

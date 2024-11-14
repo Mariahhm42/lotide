@@ -3,7 +3,7 @@ const eqArrays = function(arr1, arr2) {
     if (arr1.length !== arr2.length) {
       return false;
     }
-    for (let i = 0; i < arr1.length; i++) {
+    for (let i = 0; i < arr1.length; i++) { 
       if (arr1[i] !== arr2[i]) {
         return false;
       }
@@ -21,8 +21,9 @@ const assertArraysEqual = function(arr1, arr2) {
   };
 
   //map function
+  //applies callback function to each element
   const map = function (array, callback) {
-    const results = [];
+    const results = []; //empty array to store transformed results
     for (let item of array) {
         results.push(callback(item));
     } return results;
