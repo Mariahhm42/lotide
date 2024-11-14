@@ -1,13 +1,21 @@
-const assertEqual = require("./tail");
+const assertEqual = require("../assertEqual");
 const tail = require('../tail');
+
 
 //test code 
 const words = ["Yo Yo", "Lighthouse", "Labs"];
 tail(words);
 assertEqual(words.length, 3);
 
-const result = tail(["Hello", "Lighthouse", "Labs"]);
-console.log(result);
-assertEqual(result.length, 2);
-assertEqual(result[0], "Lighthouse");
-assertEqual(result[1], "Labs");
+const assert = require('chai').assert;
+const tail   = require('../tail');
+
+describe("#tail", () => {
+    it("returns '5' for ['5']", () => {
+        assert.strictEqual(tail(['5']), '5'); 
+      });
+      it("returns '5' for ['5']", () => {
+        assert.strictEqual(tail(['5']), '5'); 
+      });
+    });
+

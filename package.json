@@ -1,0 +1,27 @@
+{
+  "name": "@mariahhm42/lotide",
+  "version": "1.0.0",
+  "description": "first LHL project",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mariahhm42/lotide.git"
+  },
+  "keywords": [],
+  "author": "mariam agboola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mariahhm42/lotide/issues"
+  },
+  "homepage": "https://github.com/Mariahhm42/lotide#readme",
+  "devDependencies": {
+    "chai": "^5.1.2",
+    "mocha": "^10.8.2"
+  }
+}
