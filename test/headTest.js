@@ -1,4 +1,4 @@
-const assertEqual = require("./head");
+const assertEqual = require("../assertEqual");
 
 
 // Mocha an Chai based test Code 
