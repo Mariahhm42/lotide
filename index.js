@@ -4,8 +4,8 @@ const tail   = require('./tail');
 const middle = require('./middle');
 const assertArraysEqual = require('./assertArraysEqual');
 const assertEqual = require('./assertEqual');
+const eqArrays = require('./eqArrays');
 const countLetters = require('./countLetters');
-const flatten = require('./flatten');
 const map = require('./map');
 const eqObjects = require('./eqObjects');
 const assertObjectEqual = require('./assertObjectEqual');
@@ -17,13 +17,13 @@ const findKeyByValue = require('./findKeyByValue');
 const letterPositions = require('./letterPositions');
 
 
+
 //export the functions using shorthand property names
 module.exports = {
   assertArraysEqual,
   assertEqual,
   countLetters,
   eqArrays,
-  flatten,
   map,
   head,
   tail,
