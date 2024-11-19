@@ -1,11 +1,6 @@
 //assertEqual Function compares two value and logs message to indicate if they are equal
-const assertEqual = function(actual, expected) {
-    if (actual === expected) {
-        console.log(`✅ Assertion Passed: ${actual}===${expected}`);
-    } else {
-        console.log(`❌ Assertion Failed ${actual} !== ${expected}`)
-    }
-};
+const assertEqual = require("./assertEqual");
+
 //count only function 
 const countOnly = function(allItems, itemsToCount) {
     const results = {}; //empty object to store counts
@@ -35,7 +30,3 @@ const countOnly = function(allItems, itemsToCount) {
   ];
   const result1 = countOnly(firstNames, 
     { Jason: true, Karima: true, Fang: true, Agouhanna: false });
-    assertEqual(result1["Jason"], 1); //should pass, Jason appears once
-    assertEqual(result1["Karima"], undefined); //should pass, Karima did not appear
-    assertEqual(result1["Fang"], 2); //should pass
-    assertEqual(result1["Agouhanna"], undefined); //should pass

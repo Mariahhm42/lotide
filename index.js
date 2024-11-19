@@ -2,7 +2,7 @@
 const head   = require('./head');
 const tail   = require('./tail');
 const middle = require('./middle');
-const assertArrasyEqual = require('./assertArraysEqual');
+const assertArraysEqual = require('./assertArraysEqual');
 const assertEqual = require('./assertEqual');
 const countLetters = require('./countLetters');
 const flatten = require('./flatten');
@@ -15,12 +15,7 @@ const countOnly = require('./countOnly');
 const findKey = require('./findKey');
 const findKeyByValue = require('./findKeyByValue');
 const letterPositions = require('./letterPositions');
-const assertArraysEqualTest = require('./assertArraysEqualTest');
-const assertEqualTest = require('./assertEqualTest');
-const eqArraysTest = require('./eqArraysTest');
-const headTest = require('./headTest');
-const middleTest = require('./middleTest');
-const tailTest = require('./tailTest');
+
 
 //export the functions using shorthand property names
 module.exports = {
@@ -41,11 +36,5 @@ module.exports = {
   findKey,
   findKeyByValue,
   letterPositions,
-  assertArraysEqualTest,
-  assertEqualTest,
-  eqArraysTest,
-  headTest,
-  middleTest,
-  tailTest,
 
 };
