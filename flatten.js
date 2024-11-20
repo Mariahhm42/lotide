@@ -24,3 +24,4 @@ const flatten = function(array) { //flattens an array of arrays into a single ar
 
 // Test case
 console.log(flatten([1, 2, [3, 4], 5, [6]]));
+module.exports = flatten;

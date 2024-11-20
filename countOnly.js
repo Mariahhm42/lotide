@@ -30,3 +30,5 @@ const countOnly = function(allItems, itemsToCount) {
   ];
   const result1 = countOnly(firstNames, 
     { Jason: true, Karima: true, Fang: true, Agouhanna: false });
+  
+    module.exports = countOnly;

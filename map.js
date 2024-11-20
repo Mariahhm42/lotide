@@ -18,3 +18,5 @@ const assertArraysEqual = require("./assertArraysEqual");
 //   Test Cases
 const result1 = map(words, word => word[0]);
 assertArraysEqual(result1, ["l", "s", "t", "r", "g"]);
+
+module.exports = map;

@@ -23,3 +23,4 @@ const countLetters = function(sentence) {
 console.log(countLetters("LHL"));
 console.log(countLetters("Hello World"));
 console.log(countLetters("a quick brown fox"));
+module.exports = countLetters;
