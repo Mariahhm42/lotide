@@ -1,8 +1,7 @@
 //eqArray function
 const eqArrays = require("./eqArrays");
-
-//assertArraysEqual
 const assertArraysEqual = require("./assertArraysEqual");
+
 //letterPositions
 const letterPositions = function(sentence) {
     const results = {};
